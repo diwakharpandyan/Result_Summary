@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+@font-face {
+  font-family: myfont;
+  src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: myfont;
+}
+.container {
+  display: flex;
+  max-width: 35rem;
+  max-height: 40rem;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.2);
+}
+.blue {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgb(77, 77, 232), rgb(48, 48, 224));
+  flex: 1;
+  border-radius: 20px;
+  padding: 20px;
+}
+.block-2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.sumry {
+  margin-top: 0;
+  margin-bottom: 10px;
+  height: 3rem;
+  color: rgb(46, 44, 44);
+  border-radius: 10px;
+  height: 3rem;
+  width: 15rem;
+  padding: 10px;
+}
+.reactn,
+.mem,
+.verb,
+.Visual {
+  border-radius: 10px;
+  height: 3rem;
+  width: 15rem;
+  margin-bottom: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.iconbox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.txt {
+  margin-left: 10px;
+}
+.marks {
+  color: rgb(0, 0, 0);
+}
+.span {
+  color: rgb(173, 173, 173);
+}
+.reactn {
+  background-color: rgb(253, 221, 240);
+  color: rgb(197, 88, 88);
+}
+.mem {
+  background-color: rgb(248, 248, 224);
+  color: orange;
+}
+.verb {
+  background-color: rgb(223, 251, 241);
+  color: green;
+}
+.Visual {
+  background-color: rgb(222, 222, 247);
+  color: rgb(2, 2, 163);
+}
+.Continue {
+  background-color: rgb(50, 77, 77);
+  border-radius: 30px;
+  color: white;
+  margin-top: 20px;
+  height: 3rem;
+  width: 15rem;
+  margin-bottom: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mark {
+  color: white;
+  font-size: 4rem;
+}
+.round {
+  border-radius: 50%;
+  background-image: linear-gradient(rgb(20, 20, 205), rgb(70, 70, 236));
+  padding: 20px;
+  width: 10rem;
+  height: 10rem;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.blue > h2 {
+  margin-bottom: 30px;
+}
+h2 {
+  font-size: x-large;
+}
+.blue h2 {
+  color: rgb(200, 200, 200);
+}
+h1 {
+  font-size: x-large;
+  margin-bottom: 10px;
+
+  color: whitesmoke;
+}
+.blue > p {
+  text-align: center;
+  color: rgb(200, 200, 200);
+}
+.total {
+  color: rgb(185, 183, 183);
+}
+@media screen and (max-width: 640px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  body {
+    display: block;
+    min-height: 100vh;
+  }
+  .block-2 {
+    min-height: 100%;
+  }
+  .blue {
+    min-height: 100%;
+    border-radius: 0px 0px 20px 20px;
+  }
+  .attribution {
+    margin-bottom: 20px;
+  }
+}
